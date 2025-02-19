@@ -2,7 +2,7 @@
 
 <div align="center">
   <div style="display: flex; justify-content: center; gap: 20px;">
-  <img src="./ss/profile.png" alt="Image 1" width="200">
+  <img src="./ss/profile.png" alt="Image 1" width="150">
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1200px-International_Pok%C3%A9mon_logo.svg.png" alt="Image 2" width="200">
   <img src="https://caviustechnologies.com/wp-content/uploads/2024/07/Cavius-favicon-removebg-preview.png" alt="Image 3" width="200">
 </div>
