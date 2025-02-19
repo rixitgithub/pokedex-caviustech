@@ -14,8 +14,10 @@ const Home = () => {
   useEffect(() => {
     const loadPokemon = async () => {
       setLoading(true);
-      const list = await fetchPokemonList(151);
-      const details = await Promise.all(list.map((p) => fetchPokemonDetails(p.name)));
+      const list: { name: string }[] = await fetchPokemonList(151);
+      const details: Pokemon[] = await Promise.all(
+        list.map((p: { name: string }) => fetchPokemonDetails(p.name))
+      );
       setPokemonList(details);
       setLoading(false);
     };
@@ -23,7 +25,7 @@ const Home = () => {
   }, []);
 
   // Filter Pokémon based on search term
-  const filteredPokemon = pokemonList.filter((p) =>
+  const filteredPokemon = pokemonList.filter((p: Pokemon) =>
     p.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
@@ -43,24 +45,24 @@ const Home = () => {
 
   return (
     <div className="home">
-        <div className="search">
-      <input
-        type="text"
-        placeholder="Search Pokémon..."
-        value={searchTerm}
-        onChange={(e) => {
-          setSearchTerm(e.target.value);
-          setCurrentPage(1);
-        }}
-        className="search-box"
-      />
-</div>
+      <div className="search">
+        <input
+          type="text"
+          placeholder="Search Pokémon..."
+          value={searchTerm}
+          onChange={(e) => {
+            setSearchTerm(e.target.value);
+            setCurrentPage(1);
+          }}
+          className="search-box"
+        />
+      </div>
       {loading ? (
         <div className="loader">Loading...</div>
       ) : (
         <>
           <div className="pokemon-grid">
-            {currentPokemon.map((pokemon) => (
+            {currentPokemon.map((pokemon: Pokemon) => (
               <PokemonCard key={pokemon.id} pokemon={pokemon} />
             ))}
           </div>
