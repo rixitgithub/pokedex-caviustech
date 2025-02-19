@@ -1,0 +1,30 @@
+.items-page {
+    padding: 20px;
+  }
+  
+  .items-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .item-button {
+    padding: 10px 15px;
+    background: #ff9999;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Press Start 2P', cursive;
+  }
+  
+  .item-button:hover {
+    background: #ffb3b3;
+  }
+  
+  .item-details {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f8f8f8;
+    border-radius: 8px;
+  }
+  

@@ -1,0 +1,30 @@
+.types-page {
+    padding: 20px;
+  }
+  
+  .types-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .type-button {
+    padding: 10px 15px;
+    background: #66ccff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Press Start 2P', cursive;
+  }
+  
+  .type-button:hover {
+    background: #88d6ff;
+  }
+  
+  .type-details {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f8f8f8;
+    border-radius: 8px;
+  }
+  

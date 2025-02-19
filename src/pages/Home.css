@@ -1,0 +1,69 @@
+/* Home.css */
+
+.home {
+    padding: 20px;
+  }
+
+  .search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;    
+  }
+  
+  .search-box {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #ffcc00;
+    border-radius: 8px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14px;
+  }
+  
+  .pokemon-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  /* Loader Styles */
+  .loader {
+    text-align: center;
+    font-size: 24px;
+    margin: 20px;
+  }
+  
+  /* Pagination Styles */
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 20px;
+  }
+  
+  .pagination button {
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Press Start 2P', cursive;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .pagination button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .pagination button:hover:not(:disabled) {
+    background-color: #ffdd33;
+  }
+  
+  .pagination span {
+    font-size: 16px;
+    font-family: 'Press Start 2P', cursive;
+  }
+  

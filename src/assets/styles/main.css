@@ -1,0 +1,77 @@
+:root {
+    --primary-color: #e3350d;
+    --secondary-color: #f5f5f5;
+    --card-bg: #ffffff;
+  }
+  
+  .app-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .pokemon-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+  
+  /* Secondary Navigation Bar */
+  .secondary-nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #ffcc00;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: 'Press Start 2P', cursive;
+    margin: 20px auto;
+    width: fit-content;
+  }
+  
+  .secondary-nav a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    padding: 10px 15px;
+    background-color: #ff4444;
+    border-radius: 8px;
+    transition: transform 0.2s, background-color 0.3s;
+  }
+  
+  .secondary-nav a:hover {
+    background-color: #ff7777;
+    transform: scale(1.1);
+  }
+  
+  .secondary-nav a:active {
+    background-color: #cc0000;
+    transform: scale(0.95);
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 600px) {
+    .secondary-nav {
+      flex-wrap: wrap;
+      gap: 10px;
+      width: 90%;
+      padding: 5px;
+      justify-content: center;
+    }
+    
+    .secondary-nav a {
+      flex: 1 1 calc(50% - 10px); /* Each link takes roughly half the row minus gap */
+      font-size: 12px;
+      padding: 8px 10px;
+      text-align: center;
+    }
+  }

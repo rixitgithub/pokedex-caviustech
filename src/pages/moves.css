@@ -1,0 +1,30 @@
+.moves-page {
+    padding: 20px;
+  }
+  
+  .moves-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .move-button {
+    padding: 10px 15px;
+    background: #ffcc00;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Press Start 2P', cursive;
+  }
+  
+  .move-button:hover {
+    background: #ffdd33;
+  }
+  
+  .move-details {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f8f8f8;
+    border-radius: 8px;
+  }
+  
